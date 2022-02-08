@@ -1,0 +1,126 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroeramaa/TurtleLib/main/TurtleUiLib.lua"))()
+
+local window = library:Window("Project Menacing | By heber")
+
+window:Label("Autofarm", Color3.fromRGB(127, 143, 166))
+
+window:Toggle("Autofarm All", false, function(t)
+      if t then
+            _G.coin = true
+        while _G.coin == true do
+      wait(0.1)
+for i,v in pairs(workspace:GetDescendants()) do
+if v.ClassName == "ProximityPrompt" then
+fireproximityprompt(v,0)
+
+wait(0.1)
+          for _,v in pairs(workspace:GetChildren()) do
+   if v:IsA("Tool") then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
+   end
+          end
+end
+end
+end
+else
+    _G.coin = false
+    end
+end)
+
+
+
+
+window:Label("Specific Autofarm", Color3.fromRGB(127, 143, 166))
+
+window:Toggle("Autofarm Arrows", false, function(t)
+      if t then
+            _G.coin = true
+        while _G.coin == true do
+      wait(0.1)
+for i,v in pairs(workspace:GetDescendants()) do
+if v.ClassName == "ProximityPrompt" then
+fireproximityprompt(v,0)
+
+wait(0.1)
+          for _,v in pairs(workspace:GetChildren()) do
+   if v:IsA("Tool") and v.Name == "StandArrow" then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
+   end
+          end
+end
+end
+end
+else
+    _G.coin = false
+    end
+end)
+
+window:Toggle("Autofarm Rokas", false, function(t)
+      if t then
+            _G.coin = true
+        while _G.coin == true do
+      wait(0.1)
+for i,v in pairs(workspace:GetDescendants()) do
+if v.ClassName == "ProximityPrompt" then
+fireproximityprompt(v,0)
+
+wait(0.1)
+          for _,v in pairs(workspace:GetChildren()) do
+   if v:IsA("Tool") and v.Name == "StandRokakaka" then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
+   end
+          end
+end
+end
+end
+else
+    _G.coin = false
+    end
+end)
+
+
+window:Toggle("Autofarm DIODiary", false, function(t)
+      if t then
+            _G.coin = true
+        while _G.coin == true do
+      wait(0.1)
+for i,v in pairs(workspace:GetDescendants()) do
+if v.ClassName == "ProximityPrompt" then
+fireproximityprompt(v,0)
+
+wait(0.1)
+          for _,v in pairs(workspace:GetChildren()) do
+   if v:IsA("Tool") and v.Name == "DIOsDiary" then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
+   end
+          end
+end
+end
+end
+else
+    _G.coin = false
+    end
+end)
+
+window:Toggle("Autofarm DIOBone", false, function(t)
+      if t then
+            _G.coin = true
+        while _G.coin == true do
+      wait(0.1)
+for i,v in pairs(workspace:GetDescendants()) do
+if v.ClassName == "ProximityPrompt" then
+fireproximityprompt(v,0)
+
+wait(0.1)
+          for _,v in pairs(workspace:GetChildren()) do
+   if v:IsA("Tool") and v.Name == "DIOsBone" then
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
+   end
+          end
+end
+end
+end
+else
+    _G.coin = false
+    end
+end)
